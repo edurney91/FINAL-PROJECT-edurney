@@ -8,11 +8,10 @@
 //- words appear when page loads?
 
 // Header in Nav:
-// - hover change color
-// - on click take you to the appropriate page 
-
+// - hover change color - css
+// - on click take you to the appropriate page - html
 //- on click of arrow, you are taken down the page to the about me section
-
+//**can do <a href="id"
 
 //****PORFOLIO***//
 //-videos will appear 

@@ -2,10 +2,12 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
+    	<meta name="description" content="Alex's freelance weddings.">
     	<meta name="keywords" content="one, two, three">
 
 		<title>Alex's Weddings</title>
+		<!-- from Relaxr-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 
 		<!-- external CSS links -->
 		<link rel="stylesheet" href="css/reset.css">
@@ -14,66 +16,100 @@
 	</head>
 	<body>
 		<header>
-			<div class="title">
-				<h1>Alex's Weddings</h1>
-				<nav>
-			      <ul>
-			        <li>CONTACT</li>
-			        <li>FAQ</li>
-			        <li>PORTFOLIO</li>
-			        <li>HOME</li>
-			      </ul>
-			   </nav>
+			<div class="container section group">
+				<h1 class="logo col span_1_of_3">Alex's Weddings</h1>
+				<nav class="col span_2_of_3">
+			      <ul class="clearfix">
+			        <li><a href="#">HOME</a></li>
+				    <li><a href="#">PORTFOLIO</a></li>
+				    <li><a href="#">FAQ</a></li>
+				    <li><a href="#">CONTACT ME</a></li>
+				  </ul>
+				</nav>
 			</div>
 		</header>
-			<div class="container">
-			<!-- video intro -->
-				<video id="myVideo" width="320" height="176">
-				  <source src="mov_bbb.mp4" type="video/mp4">
-				  Your browser does not support HTML5 video.
-				</video>
-			<div id= "videoIntro">
-				<div class="social">
-						<a href ="https://www.twitter.com"> 
-							<img border = "0" alt="Twitter" src="images/twitter.png" width="100" height="100"> </a> 
+					<!-- video intro -->
+			
+		<div id="welcomeVideo">
+			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HNM5_bn3BLk?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/HNM5_bn3BLk?autoplay=1&loop=1"></iframe>
 
-						<a href ="https://www.facebook.com"> 
-							<img border = "0" alt="Facebook" src="images/facebook.png" width="100" height="100"> </a> 
-						<a href ="https://www.linkedin.com"> 
-							<img border = "0" alt="Linkedin" src="images/linkedin.png" width="100" height="100"> </a> 
-					</div>
+			<div id="welcomeSocial" class="social">
+				<a href ="https://www.twitter.com"> 
+				<img border = "0" alt="Twitter" src="images/twitter.png" width="100" height="100"> </a> 
+
+				<a href ="https://www.facebook.com"> 
+				<img border = "0" alt="Facebook" src="images/facebook.png" width="100" height="100"> </a> 
+				
+				<a href ="https://www.linkedin.com"> 
+				<img border = "0" alt="Linkedin" src="images/linkedin.png" width="100" height="100"> </a> 
 			</div>
-
+		</div>
+		<!--Main Home section-->
+		<section id="main">
+			<div class="container">
 			<!-- About me -->
+			<div id="aboutMe">
+				<h2>About Alex</h2>
+				<p>Alex is so great!Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+				<p class="readmore"><a href="#">Read more &gt;</a></p>
+			</div>
+			<!--testimonials-->
+			<section id="testimonial">
+				<div class="container">
+					<blockquote>&ldquo;Alex changed my life. I&rsquo;ve been able to have the perfect wedding thanks to Alex's videos, they are so pretty!&rdquo;
+					<span>- Katie & Jim</span></blockquote>
+				</div>
+			</section>
 
 			<!-- Featured weddings -->
+			<div id="featuredWeddings" class="section group">
+				<div class="col span_1_of_3 featured1"><iframe width="560" height="315" src="https://www.youtube.com/embed/HNM5_bn3BLk?" frameborder="0" allowfullscreen></iframe></div>
+				<div class="col span_1_of_3 featured2"><iframe width="560" height="315" src="https://www.youtube.com/embed/HNM5_bn3BLk?" frameborder="0" allowfullscreen></iframe></div>
+				<div class="col span_1_of_3 featured3"><iframe width="560" height="315" src="https://www.youtube.com/embed/HNM5_bn3BLk?" frameborder="0" allowfullscreen></iframe></div>
+			</div>
+
+		</section>
 
 			<!-- contact form -->
-				<div class = "Contact"> 
-				<form>
+				<div class = "contact"> 
+					<form action="contact.php" method="post" id="contactAlex">
+						<ul>
+							<li><label>Name:<input id="name" input type="text" placeholder="First Last"></label></li>
+						
+							<li><label>Your Email: </label><input type="email" placeholder="example@example.com"></label></li>
+
+							<li><label>Wedding Date:</label><input type="date" id="wedding-date"></li>
+
+							<li><label>Messasge:</label><input type="text" id="inquiry" placeholder="Tell me about your wedding!"></li>
+						</ul>
+						<button type="submit" form="contactAlex" value="submit">Submit!</button>
+					</form>
+				<!-- <form>
 					<input type="text" id="your-name" placeholder="Enter your name...">
 					<input type="text" id="your-email" placeholder="youremail@example.com">
 					<input type="text" id="your-phone" placeholder="Enter your phone number...">
 					<input type="text" id="your-inquiry" placeholder="Tell us about your wedding!">
 					<input type="submit" value="Submit" id="submit-btn">
-				</form>
+				</form> -->
 				</div>
 			<!-- footer -->
-			<footer>
-				<img src="#"> <!-- logo -->
-				<div class="social">
-					<a href ="https://www.twitter.com"> 
-						<img border = "0" alt="Twitter" src="images/twitter.png" width="100" height="100"> </a> 
+			<footer class="clearfix">
+				<h4 class="logo">Alex's Weddings</h4> <!-- logo -->
+					<ul class="social">
+						<li><a href ="https://www.twitter.com"> 
+							<img border = "0" alt="Twitter" src="images/twitter.png" width="100" height="100"> </a></li> 
 
-					<a href ="https://www.facebook.com"> 
-						<img border = "0" alt="Facebook" src="images/facebook.png" width="100" height="100"> </a> 
-					<a href ="https://www.linkedin.com"> 
-						<img border = "0" alt="Linkedin" src="images/linkedin.png" width="100" height="100"> </a> 
-				</div>
-				<p>Bringing weddings to you!</p>
+						<li><a href ="https://www.facebook.com"> 
+							<img border = "0" alt="Facebook" src="images/facebook.png" width="100" height="100"> </a></li> 
+						<li><a href ="https://www.linkedin.com"> 
+							<img border = "0" alt="Linkedin" src="images/linkedin.png" width="100" height="100"> </a> </li>
+					</ul>
+				<p class="tagline">Bringing weddings to you!</p>
 			</footer>
 
-			</div>
+
+		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
